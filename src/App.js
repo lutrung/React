@@ -27,13 +27,13 @@ function App() {
       {/* <Databinding/> */}
       {/* <HandleEvent/> */}
       {/* <DemoConditionalAndState /> */}
-      <BaiTapChonMauXe />
+      {/* <BaiTapChonMauXe /> */}
       {/* <DemoListAndKeys /> */}
       {/* <DemoProps /> */}
       {/* <BaiTapGioHang /> */}
       {/* <SuaBaiTapGioHang /> */}
       {/* <BaiTapGioHangRedux /> */}
-      {/* <BaiTapGameXucXac/> */}
+      <BaiTapGameXucXac />
     </div>
   );
 }
