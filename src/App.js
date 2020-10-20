@@ -16,6 +16,9 @@ import BaiTapGioHang from "./Components/BaiTapGioHang";
 import SuaBaiTapGioHang from "./Components/SuaBaiTapGioHang";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 import BaiTapGameXucXac from "./BaiTapGameXucXac";
+import LifeCycle from "./LifeCycle/LifeCycle";
+import FormComponent from "./FormComponent/FormComponent";
+import DanhSachNguoiDung from "./FormComponent/DanhSachNguoiDung";
 
 function App() {
   return (
@@ -33,7 +36,9 @@ function App() {
       {/* <BaiTapGioHang /> */}
       {/* <SuaBaiTapGioHang /> */}
       {/* <BaiTapGioHangRedux /> */}
-      <BaiTapGameXucXac />
+      {/* <BaiTapGameXucXac /> */}
+      {/* <LifeCycle /> */}
+      <DanhSachNguoiDung />
     </div>
   );
 }

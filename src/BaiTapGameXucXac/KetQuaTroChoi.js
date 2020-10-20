@@ -1,24 +1,30 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 class KetQuaTroChoi extends Component {
-  renderKetQua = () => {
-    // sử dụng thuộc tính this.props.mangXucXac để hiển thị kết quả
-    let tongDiem = this.props.mangXucXac.reduce((tongDiemXX, xucXac, index) => {
-      return (tongDiemXX += xucXac.so);
-    }, 0);
-    let ketQua = tongDiem > 9 ? "Tài" : "Xỉu";
-    return (
-      <div>
-        <span className="display-4 text-dark">
-          {tongDiem} - {ketQua}
-        </span>
-      </div>
-    );
-  };
+  // renderKetQua = () => {
+  //   sử dụng thuộc tính this.props.mangXucXac để hiển thị kết quả
+  //   let tongDiem = this.props.mangXucXac.reduce((tongDiemXX, xucXac, index) => {
+  //     return (tongDiemXX += xucXac.so);
+  //   }, 0);
+  //   let ketQua = tongDiem > 9 ? "Tài" : "Xỉu";
+  //   return (
+  //     <div>
+  //       <span className="display-4 text-dark">
+  //         {tongDiem} - {ketQua}
+  //       </span>
+  //     </div>
+  //   );
+  // };
   render() {
     return (
       <div className="text-center">
-        <div className="display-4">{this.renderKetQua()}</div>
+        <div className="display-4">
+          Kết quả là:{" "}
+          <span className="text-warning">
+            {" "}
+            {this.props.ketQuaTaiXiu} - {this.props.diemXucXac}
+          </span>
+        </div>
 
         <div className="display-4">
           Bạn chọn: <span className="text-danger">{this.props.banChon}</span>
@@ -52,11 +58,17 @@ const mapStateToProps = (state) => {
     soBanThang: state.stateBaiTapGameXucXac.soBanThang,
     tongSoBanChoi: state.stateBaiTapGameXucXac.tongSoBanChoi,
     mangXucXac: state.stateBaiTapGameXucXac.mangXucXac,
+    ketQuaTaiXiu: state.stateBaiTapGameXucXac.ketQuaTaiXiu,
+    diemXucXac: state.stateBaiTapGameXucXac.diemXucXac,
   };
 };
 const mapDispatchToProps = (dispatch) => {
   return {
     playGame: () => {
+      const action = {
+        type: "DIEU_KIEN",
+      };
+      dispatch(action);
       // hàm để random xx 10 lần xong dừng
       let n = 0;
       let ranDomXucXac = setInterval(() => {

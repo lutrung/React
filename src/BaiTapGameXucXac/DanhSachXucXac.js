@@ -18,7 +18,7 @@ class DanhSachXucXac extends Component {
       <div className="row text-center">
         <div className="col-3 ">
           <button
-            className="btn btn-success p-4"
+            className="btn btn-success p-4 rounded-circle"
             onClick={() => {
               this.props.datCuoc("Tài");
             }}
@@ -31,7 +31,7 @@ class DanhSachXucXac extends Component {
 
         <div className="col-3">
           <button
-            className="btn btn-danger p-4"
+            className="btn btn-danger p-4 rounded-circle"
             onClick={() => {
               this.props.datCuoc("Xỉu");
             }}
