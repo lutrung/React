@@ -13,7 +13,6 @@ import BaiTapChonMauXe from "./BaiTapChonMauXe";
 import DemoListAndKeys from "./ListAndKeys/DemoListAndKeys";
 import DemoProps from "./Props/DemoProps";
 import BaiTapGioHang from "./Components/BaiTapGioHang";
-import SuaBaiTapGioHang from "./Components/SuaBaiTapGioHang";
 import BaiTapGioHangRedux from "./BaiTapRedux/BaiTapGioHangRedux";
 import BaiTapGameXucXac from "./BaiTapGameXucXac";
 import LifeCycle from "./LifeCycle/LifeCycle";
@@ -34,7 +33,6 @@ function App() {
       {/* <DemoListAndKeys /> */}
       {/* <DemoProps /> */}
       {/* <BaiTapGioHang /> */}
-      {/* <SuaBaiTapGioHang /> */}
       {/* <BaiTapGioHangRedux /> */}
       {/* <BaiTapGameXucXac /> */}
       {/* <LifeCycle /> */}

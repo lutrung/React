@@ -8,6 +8,7 @@ export default class LifeCycle extends Component {
       number: {
         index: 1,
       },
+      test: 0,
     };
     console.log("constructor");
   }
@@ -23,6 +24,7 @@ export default class LifeCycle extends Component {
       <div>
         <header>Header</header>
         <h1>LifeCycle number: {this.state.number.index}</h1>
+        <h1>Test: {this.state.test}</h1>
         <button
           onClick={() => {
             let newNumber = { ...this.state.number };
@@ -31,12 +33,17 @@ export default class LifeCycle extends Component {
             this.setState({
               number: newNumber,
             });
+            let newTest = this.state.test;
+            newTest += 1;
+            this.setState({
+              test: newTest,
+            });
           }}
         >
           +
         </button>
         {/* {this.state.number < 3 ? <ChildComponent /> : ""} */}
-        <ChildComponent number={this.state.number} />
+        <ChildComponent number={this.state.number} test={this.state.test} />
       </div>
     );
   }

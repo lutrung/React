@@ -1,5 +1,5 @@
 import React, { Component, PureComponent } from "react";
-
+// pureComponent dùng để render lại Component CHỈ khi có giá trị thay đổi trong component đó đối vs giá trị MẢNG HAY OBJECT thì phải xài {...this.state...}
 export default class ChildComponent extends PureComponent {
   constructor(props) {
     super(props);
@@ -18,6 +18,7 @@ export default class ChildComponent extends PureComponent {
     return (
       <div>
         <h3>Child number:{this.props.number.index}</h3>
+        <h3>Test:{this.props.test}</h3>
         Conponent child
       </div>
     );
