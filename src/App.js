@@ -18,6 +18,11 @@ import BaiTapGameXucXac from "./BaiTapGameXucXac";
 import LifeCycle from "./LifeCycle/LifeCycle";
 import FormComponent from "./FormComponent/FormComponent";
 import DanhSachNguoiDung from "./FormComponent/DanhSachNguoiDung";
+import BaiTapDoiMauXe from "./Hooks/DemoHookUseState/BaiTapDoiMauXe";
+import DemoHookUseEffect from "./Hooks/DemoHookUseEffect/DemoHookUseEffect";
+import DemoUseCallBack from "./Hooks/DemoUseCallBack/DemoUseCallBack";
+import DemoUseMemo from "./Hooks/DemoHookUseMemo/DemoUseMemo";
+import GameXucXacReactFunction from "./Hooks/GameXucXacReactFunction/GameXucXacReactFunction";
 
 function App() {
   return (
@@ -37,6 +42,13 @@ function App() {
       {/* <BaiTapGameXucXac /> */}
       {/* <LifeCycle /> */}
       <DanhSachNguoiDung />
+
+      {/* ------------------------------REACT HOOK------------------------------ */}
+      {/* <BaiTapDoiMauXe /> */}
+      {/* <DemoHookUseEffect /> */}
+      {/* <DemoUseCallBack /> */}
+      {/* <DemoUseMemo /> */}
+      {/* <GameXucXacReactFunction /> */}
     </div>
   );
 }
